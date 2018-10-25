@@ -50,13 +50,14 @@ html, body {
 
 body {
   font-family: var(--base-fontM);
-  /* font-family: 'Roboto', sans-serif; */
   font-size: 100%;
-  background: var(--grey);
+  background: orange;
   display: flex;
   flex-flow: column;
   min-height: 100vh;
 }
+
+
 
 html * {
   box-sizing: border-box;
@@ -109,25 +110,19 @@ footer {
 }
 
 footer .footer-top {
-  display: flex;
 }
 
 footer .footer-left {
-  flex: 1;
-  text-align: left;
-  text-transform: uppercase;
 }
 
 footer .footer-right {
-  flex: 1;
-  text-align: right;
-  text-transform: uppercase;
 }
 
 footer a {
   font-family: var(--base-fontP);
   text-decoration: none;
   color: var(--grey-light);
+  text-transform: uppercase;
 }
 
 footer .footer-bottom {
@@ -141,4 +136,26 @@ footer ul {
 
 li {
   background:none;
+}
+
+@media screen and (min-width: 576px) {
+  footer .footer-top {
+     display: flex;
+  }
+  footer .footer-left,
+  footer .footer-right {
+     flex: 1;
+  }
+  footer .footer-right {
+     text-align: right;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+}
+
+@media screen and (min-width: 1200px) {
 }
