@@ -1,5 +1,5 @@
 :root {
-  --screen-max: 1300px;
+  --screen-max: 1100px;
   --base-font: 'Montserrat', sans-serif;
   --base-font2: 'Pridi', 'Times New Roman', serif;
 
@@ -8,6 +8,7 @@
   --grey: #696969;
 
   --font-color-light: var(--grey-dark);
+  --main-padding: 20px;
 }
 
 @font-face {
@@ -139,6 +140,7 @@ footer .inner-wrapper {
   position: relative;
   max-width: var(--screen-max);
   margin: 0 auto;
+  font-family: var(--base-font);
 }
 
 header#main-header h1 {
