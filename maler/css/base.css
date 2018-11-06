@@ -1,45 +1,53 @@
 :root {
   --screen-max: 1300px;
-  --base-fontM: 'Montserrat', sans-serif;
-  --base-fontP: 'Pridi', 'Times New Roman', sans-serif;
+  --base-font: 'Montserrat', sans-serif;
+  --base-font2: 'Pridi', 'Times New Roman', serif;
+
   --grey-light: #fefefe;
   --grey-dark: #525252;
   --grey: #696969;
-}
-@font-face {
-  font-family: 'Montserrat';
-  src: url(../fonts/Montserrat-Regular.ttf);
-  font-weight: normal;
+
+  --font-color-light: var(--grey-dark);
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url(../fonts/Montserrat-Bold.ttf);
-  font-weight: bold;
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-weight: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url(../fonts/Montserrat-Light.ttf);
-  font-weight: lighter;
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Medium.ttf);
+    font-weight: 500;
 }
 
 @font-face {
-  font-family: 'Pridi';
-  src: url(../fonts/Pridi-Regular.ttf);
-  font-weight: normal;
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Bold.ttf);
+    font-weight: bold;
 }
 
 @font-face {
-  font-family: 'Pridi';
-  src: url(../fonts/Pridi-Bold.ttf);
-  font-weight: bold;
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Light.ttf);
+    font-weight: lighter;
 }
 
 @font-face {
-  font-family: 'Pridi';
-  src: url(../fonts/Pridi-Light.ttf);
-  font-weight: lighter;
+    font-family: 'Pridi';
+    src: url(../fonts/Pridi-Regular.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Pridi';
+    src: url(../fonts/Pridi-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Pridi';
+    src: url(../fonts/Pridi-Light.ttf);
+    font-weight: lighter;
 }
 
 html, body {
@@ -47,9 +55,8 @@ html, body {
 }
 
 body {
-  font-family: var(--base-fontM);
+  font-family: var(--base-font);
   font-size: 100%;
-  background: var(--grey);
   display: flex;
   flex-flow: column;
   min-height: 100vh;
@@ -59,48 +66,66 @@ html * {
   box-sizing: border-box;
 }
 
+.main-navigation {
+  display: none;
+}
+
 #logo {
   position: fixed;
   z-index: 100;
-  top: 100;
+  top: 0;
   left: 5em;
-  width: 5em;
-  height: 5em;
+  width: 7em;
+  height: 7em;
 }
 #logo a {
   display: block;
   width: 100%;
   height: 100%;
-  background: var(--grey-dark) url('../img/logo_muthwill.svg') no-repeat;
-  background-size: contain;
+  background: var(--grey-dark) url('../img/logo_muthwill.svg') no-repeat center center;
+  background-size: 80%;
   text-indent: -9999em;
   overflow: hidden;
 }
 
 #logo-part-2 {
   position: absolute;
+  z-index: 100;
   top: 0;
-  left: 10em;
-  width: 9em;
-  height: 5em;
+  left: 12em;
+  width: 17em;
+  height: 7em;
 }
 
 #logo-part-2 a {
-  display: block;
+  display: flex;
   width: 100%;
   height: 100%;
   background-color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-size: 1.3rem;
+  line-height: 1em;
+  font-weight: 500;
+  color: var(--grey);
 }
 
-header {
+#logo-part-2 a span {
+  display: inline;
+}
+
+header#main-header {
   position: relative;
   width: 100%;
   height: 45vw;
-  /* background: lightgreen; */
+  background: lightgreen;
   overflow: hidden;
 }
 
-header img {
+header#main-header img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -108,50 +133,24 @@ header img {
   display: block;
 }
 
-header .inner-wrapper,
+header#main-header .inner-wrapper,
+.content-element .inner-wrapper,
 footer .inner-wrapper {
   position: relative;
   max-width: var(--screen-max);
   margin: 0 auto;
-  font-family: var(--base-fontP);
-  font-weight: lighter;
 }
 
-header .inner-wrapper1 {
-  /*position: top;*/
-  max-width: var(--screen-max);
-  margin: 0 auto;
-  font-family: var(--base-fontM);
-  font-weight: lighter;
-}
-
-header h1
-{
+header#main-header h1 {
+  font-size: 48px;
   position: absolute;
+  left: 0;
   bottom: 0;
-  left: 0;
-  color: white;
-}
-
-header h2
-{ bottom: 0;
-  left: 0;
-  color: white;
-  font-family: var(--base-fontM);
-  font-size: 22px;
-}
-
-header h3
-{ bottom: 0;
-  left: 0;
-  color: white;
-  font-family: var(--base-fontM);
-  font-size: 18px;
+  background: none;
 }
 
 main {
   flex: 1;
-  background: lightgrey;
 }
 
 footer {
@@ -159,19 +158,20 @@ footer {
 }
 
 footer a {
-  font-family: var(--base-fontP);
-  text-decoration: none;
   color: var(--grey-light);
+  font-family: var(--base-font2);
+  text-decoration: none;
   text-transform: uppercase;
 }
 
 footer ul {
-  list-style-type: none;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
 footer .footer-top {
+
 }
 
 footer .footer-left {
@@ -181,81 +181,40 @@ footer .footer-right {
 }
 
 footer .footer-bottom {
-max-width: var(--screen-max);
-margin: 0 auto;
-color: var(--grey-light);
-opacity: .15;
+  color: var(--grey-light);
+  opacity: .15;
 }
 
-li {
-  background:none;
+@media screen and (min-width: 480px) {
+
 }
+
 
 @media screen and (min-width: 576px) {
+
   footer .footer-top {
-     display: flex;
+    display: flex;
   }
 
   footer .footer-left,
   footer .footer-right {
-     flex: 1;
+    flex: 1;
   }
 
   footer .footer-right {
-     text-align: right;
+    text-align: right;
   }
+
 }
 
 @media screen and (min-width: 768px) {
+
 }
 
 @media screen and (min-width: 992px) {
+
 }
 
 @media screen and (min-width: 1200px) {
-}
 
-section .content-element {
-  display: block;
-  background: purple;
-  position: relative;
-}
-
-.content-element .teaser {
-  position: relative;
-  /* max-width: var(--screen-max); */
-  margin: 0 auto;
-  color: white;
-  font-size: 15px;
-
-  background:
-  -webkit-linear-gradient(rgba(255,125,0,0.5),rgba(255,125,0,0.5)),
-  url(img_01.jpg);
-
- background:
-  linear-gradient(rgba(255, 100, 1, 0.98),rgba(152, 84, 14,0.8)),
-  url(../img/img_01.jpg);
-
-  background-size: cover;
-  height: 35vw;
-}
-
-.content-element .teaser p {
-  position: relative;
-  z-index: 10;
-  font-family: var(--base-fontM);
-  font-weight: lighter;
-  /* padding-right: 45%; */
-}
-
-.content-element a.button {
-  display: inline-block;
-  padding 1em 2em;
-  background: orange;
-  color: white;
-  text-decoration: none;
-}
-
-.content-element a.button.hover {
-  opacity: .6;
 }
