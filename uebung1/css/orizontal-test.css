@@ -1,0 +1,22 @@
+htm, body {
+  margin: 10px;
+  padding: 10px;
+
+}
+
+nav {
+  background-color: rgb(109, 102, 111);
+  display: block;
+}
+
+nav.main-navigation ul {
+  list-style-type: none;
+}
+
+nav.main-navigation li{
+  height: 50px;
+  width: 100px;
+  margin: 10;
+  padding: 10;
+    background-color: white;
+}
