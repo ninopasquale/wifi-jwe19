@@ -68,6 +68,16 @@ nav.main-navigation ul li ul li {
   width: 200px;
 }
 
+nav.main-navigation ul li ol ul li {
+  display: none;
+}
+nav.main-navigation >ul>li>ol>ul>li:hover a {
+  display: block;
+  background: black;
+  color: yellow;
+}
+
+
 nav.main-navigation ul li ul li:hover a {
   background: black;
   color: yellow;

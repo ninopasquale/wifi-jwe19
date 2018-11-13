@@ -100,3 +100,57 @@ section.content-element {
   }
 
 }
+
+.content-submit input[type="submit"] {
+  display: inline-block;
+  padding: 1em 2em;
+  background: orange;
+  color: white;
+  border: 0;
+  font-family: var(--base-font);
+  font-size: 17px;
+    width: 550px;
+}
+
+.content-submit input[type="submit"]:hover {
+  opacity: .6;
+}
+
+
+.content-submit input[type="text"] {
+  display: inline-block;
+  background: white;
+  color: Black;
+  border: 1;
+  font-family: var(--base-font);
+  font-size: 17px;
+  height: 40px;
+  width: 550px;
+}
+
+.content-submit input[type="email"] {
+  display: inline-block;
+  background: white;
+  color: Black;
+  border: 1;
+  font-family: var(--base-font);
+  font-size: 17px;
+  height: 40px;
+  width: 550px;
+}
+
+.content-submit textarea {
+  display: inline-block;
+  background: white;
+  color: Black;
+  border: 1;
+  font-family: var(--base-font);
+  font-size: 17px;
+  width: 550px;
+}
+
+.content-background {
+  margin-top: 2rem;
+  padding: 20px;
+  background: var(--grey-dark);
+}

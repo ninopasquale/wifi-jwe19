@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formular test</title>
+  </head>
+  <body>
+
+    <form class="" action="formular.html" method="get">
+    <form class="" action="formular.html" method="post">
+
+      <p>
+        <label for="donna">Frau</label>
+        <input type="radio" name="gender" id="female" value="female">
+
+        <label for="uomo">Mann</label>
+        <input type="radio" name="gender" id="male" value="male">
+
+      </p>
+
+
+      <p>
+        <label for="firstname">Vorname</label>
+        <input type="text" name="firstname" tabindex="3" id="firstname" value="" placeholder="Vorname">
+      </p>
+      <p>
+        <label for="laststname">Nachname</label>
+        <input type="text" name="lastname" tabindex="1" id="lastname" value="" placeholder="Nachname">
+      </p>
+      <p>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" value="" placeholder="deine email">
+
+      </p>
+
+      <p>
+        <label for="passwordId">Passwort</label>
+        <input type="password" name="passwordId" id="passwordId" value="" >
+      </p>
+
+      <p><label for="socks"> Wie viele Zeile darfst du eintragen</label>
+        <input type="number" name="socks" id="socks" value="" min="4" max="20" step="2">
+      </p>
+
+<p>
+    <label for="animalfriend">Lista animali</label>
+    <br>
+    <select id="animalfriend" name="animalfriend" multiple>
+  <option value="1">gatto</option>
+  <option value="2">cane</option>
+  <option value="3">coccodrillo</option>
+  <option value="4">rinoceronte</option>
+  <option value="5">Lucertola bianca</option>
+  <option value="6">Scimmia della savana</option>
+</select>
+</p>
+
+
+<p>
+  <label for="animalfriend2">Lista animali combo</label>
+</p>
+<p>
+<select id="animalfriend2" name="animalfriend2">
+  <option value="11">gatto</option>
+  <option value="22">cane</option>
+  <option value="33">coccodrillo</option>
+  <option value="44">rinoceronte</option>
+  <option value="55">Lucertola bianca</option>
+  <option value="66">Scimmia della savana</option>
+</select>
+</p>
+
+<p>
+<label for="notes">Nota</label>
+</p>
+<p>
+<textarea name="notes" rows="4" cols="80">fsdjkhjkfsdhjkfhsdfjkhdfskjh</textarea>
+</p>
+
+<p>
+<label for="check">Check</label>
+<input type="checkbox" id="check" name="check" value="" required>
+</p>
+
+<p>
+  <input type="submit" id="submit" name="submit" value="Invia">
+  <button type="button" name="button">Invia con Bottone</button>
+  <input type="reset" id="reset" name="reset" value="Reset">
+</p>
+
+<p>
+  <label for="date">Date</label>
+<input type="date" name="date" id="date" value="">
+</p>
+
+</form>
+
+
+
+  </body>
+</html>
