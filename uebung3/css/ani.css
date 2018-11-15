@@ -1,0 +1,75 @@
+@keyframes moving {
+
+  0% {
+    left: 0;
+    top: 0;}
+
+  25% {
+    left: 100%;
+    top: 100%;
+    transform: translateX(-100%) translateY(-100%);
+  }
+
+  50% {
+    left: 0;
+    top:  100%;
+    transform: translateX(-0%) translateY(-100%);
+  }
+
+  75% {
+    left: 100%;
+    top: 0;
+    transform: translateX(-100%) translateY(-100%);
+  }
+
+  100% {
+    left: 0;
+    top: 0;
+    transform: translateX(-0%) translateY(-0%);
+  }
+
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+transform: rotate(360deg);
+  }
+
+}
+
+.crazy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(55, 22, 70);
+  animation-name: moving;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-iteration-count: infinite;;
+}
+
+.spinner {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: 20px solid rgb(198, 10, 38);
+    border-radius: 100%;
+    border-top: 20px solid transparent;
+    /*border-top: 60px solid transparent;*/
+    /*animation: spin 2s ease-in-out infinite; */
+
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+    }
+
+
+}
