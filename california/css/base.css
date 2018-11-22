@@ -65,6 +65,7 @@ html * {
 .grid-container-img1 {
   display: grid;
   grid-template-columns: auto auto auto;
+<<<<<<< HEAD
 }
 
 .grid-item-img1 img{
@@ -118,6 +119,62 @@ html * {
     filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 
+=======
+}
+
+.grid-item-img1 img{
+  position: relative;
+  background: white;
+  overflow: hidden;
+  padding: 0px;
+  width: 280px;
+}
+
+.grid-item-img1 img:hover {
+
+   transform: rotate(-4deg);
+   -webkit-transform: rotate(-4deg);
+   -ms-transform: rotate(-4deg);
+}
+
+.grid-item-img1 li {
+  color: black;
+  font-family: var(--fontM);
+  font-weight: bolder;
+  font-style: normal;
+  padding: 0px;
+  }
+
+.grid-item-img1 a {
+    color: red;
+    font-family: var(--fontM);
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 12px;
+    text-decoration: underline;
+  }
+
+
+
+.gallery {
+    display: flex;
+    padding: 0;
+}
+
+.gallery img {
+    margin-top: 0;
+    vertical-align: middle;
+	  width: 25%;
+	  height: 25%;
+}
+
+
+.gallery img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+>>>>>>> master
 
 header#main-header {
   position: relative;
