@@ -4,11 +4,13 @@ section.content-element {
 }
 
 .content-element h2.content-header {
-  font-family: 'Pridi', sans-serif;
-  font-size: 9.5vw;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;;
   line-height: 1.2em;
   font-weight: lighter;
-  text-transform: uppercase;
+  valign: center;
+
+  /* text-transform: uppercase; */
   word-break: break-word;
 }
 
@@ -24,13 +26,13 @@ section.content-element {
 }
 
 .content-element img {
-  max-width: 100%;
+  max-width: 25%;
 }
 
 .content-element .teaser img {
   display: block;
   position: relative;
-  width: 100%;
+  width: 25%;
   height: auto;
   object-fit: cover;
   object-position: center top;
@@ -109,7 +111,7 @@ section.content-element {
   border: 0;
   font-family: var(--base-font);
   font-size: 17px;
-    width: 550px;
+  width: 550px;
 }
 
 .content-submit input[type="submit"]:hover {
