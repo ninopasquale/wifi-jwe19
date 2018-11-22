@@ -3,6 +3,10 @@ section.content-element {
   position: relative;
 }
 
+.content-title {
+  margin-left: -15%;
+}
+
 .content-element h2.content-header {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;;

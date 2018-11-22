@@ -76,10 +76,8 @@ html * {
 }
 
 .grid-item-img1 img:hover {
-
    transform: rotate(-4deg);
-   -webkit-transform: rotate(-4deg);
-   -ms-transform: rotate(-4deg);
+   transition: 0.3s;
 }
 
 .grid-item-img1 li {
@@ -100,7 +98,6 @@ html * {
   }
 
 
-
 .gallery {
     display: flex;
     padding: 0;
@@ -115,8 +112,9 @@ html * {
 
 
 .gallery img:hover {
-    opacity: 0.5;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
+    opacity: 0.6;
+    transition: opacity 0.5s;
+    cursor: pointer;
 }
 
 
@@ -203,28 +201,77 @@ footer .footer-bottom {
   margin-right: 2rem;
 }
 
-@media screen and (min-width: 480px) {
-  #logo {
-      width: 7rem;
-      height: 7rem;
+@media screen and (min-width: 280px) {
+  header#main-header h1 {
+    font-size: 0.7rem;
+    font-weight: bolder;
+    font-family: var(--fontO);
+
   }
 
-  #logo-part-2 {
-    left: 7rem;
-    height: 7rem;
+  header#main-header h2 {
+    font-size: 0.2rem;
+    font-weight: normal;
+
   }
 
-  #logo-part-2 a {
-    padding: 2rem;
+
+@media screen and (min-width: 350px) {
+  header#main-header h1 {
+    font-size: 1rem;
+    font-weight: bolder;
+    font-family: var(--fontO);
+
+  }
+
+  header#main-header h2 {
+    font-size: 0.3rem;
+    font-weight: normal;
+
   }
 
 }
 
+@media screen and (min-width: 400px) {
+  header#main-header h1 {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    font-family: var(--fontO);
+  }
 
-@media screen and (min-width: 576px) {
+  header#main-header h2 {
+    font-size: 0.4rem;
+    font-weight: normal;
+  }
+}
+
+
+@media screen and (min-width: 480px) {
+  header#main-header h1 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    font-family: var(--fontO);
+  }
+
+  header#main-header h2 {
+    font-size: 0.6rem;
+    font-weight: normal;
+  }
+}
+
+
+@media screen and (min-width: 700px) {
 
   header#main-header h1 {
-    font-size: 3.5rem;
+    font-size: 2.1rem;
+    font-weight: bolder;
+    font-family: var(--fontO);
+  }
+
+  header#main-header h2 {
+    font-size: 0.9rem;
+    font-weight: normal;
+
   }
 
   footer .footer-top {
